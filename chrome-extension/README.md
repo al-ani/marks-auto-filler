@@ -38,6 +38,7 @@ id,score
 ## How It Works
 
 The extension:
+
 1. Reads the CSV file you select
 2. Shows the reason-code and column-mapping controls only after a file is loaded
 3. Lets you choose which uploaded columns contain the student ID and score

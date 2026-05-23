@@ -1,37 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580">
-  <rect width="960" height="580" fill="#f8fafc"/>
-  <rect x="48" y="70" width="864" height="380" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
-  <rect x="48" y="70" width="864" height="56" rx="18" fill="#dbeafe"/>
-  <text x="84" y="106" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#0f172a">Student Marks Page</text>
+    <rect width="960" height="580" fill="#f8fafc" />
+    <rect x="48" y="70" width="864" height="380" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="3" />
+    <rect x="48" y="70" width="864" height="56" rx="18" fill="#dbeafe" />
+    <text x="84" y="106" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#0f172a">Student Marks
+        Page</text>
 
-  <rect x="80" y="154" width="70" height="62" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="104" y="192" font-family="Segoe UI, Arial" font-size="24" fill="#334155">1</text>
+    <rect x="80" y="154" width="70" height="62" rx="10" fill="#f1f5f9" stroke="#cbd5e1" />
+    <text x="104" y="192" font-family="Segoe UI, Arial" font-size="24" fill="#334155">1</text>
 
-  <rect x="170" y="154" width="182" height="62" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
-  <text x="194" y="192" font-family="Consolas, monospace" font-size="24" fill="#1d4ed8">202303387</text>
+    <rect x="170" y="154" width="182" height="62" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="2" />
+    <text x="194" y="192" font-family="Consolas, monospace" font-size="24" fill="#1d4ed8">202303387</text>
 
-  <rect x="372" y="154" width="230" height="62" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
-  <text x="392" y="192" font-family="Segoe UI, Arial" font-size="20" fill="#334155">Abdulshahid, Ahmed A.</text>
+    <rect x="372" y="154" width="230" height="62" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+    <text x="392" y="192" font-family="Segoe UI, Arial" font-size="20" fill="#334155">Abdulshahid, Ahmed A.</text>
 
-  <rect x="622" y="154" width="120" height="62" rx="10" fill="#ecfdf5" stroke="#86efac"/>
-  <text x="650" y="192" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#047857">92.14</text>
+    <rect x="622" y="154" width="120" height="62" rx="10" fill="#ecfdf5" stroke="#86efac" />
+    <text x="650" y="192" font-family="Segoe UI, Arial" font-size="24" font-weight="700" fill="#047857">92.14</text>
 
-  <rect x="762" y="154" width="118" height="62" rx="10" fill="#fef3c7" stroke="#f59e0b"/>
-  <text x="783" y="192" font-family="Segoe UI, Arial" font-size="20" fill="#92400e">OE</text>
+    <rect x="762" y="154" width="118" height="62" rx="10" fill="#fef3c7" stroke="#f59e0b" />
+    <text x="783" y="192" font-family="Segoe UI, Arial" font-size="20" fill="#92400e">OE</text>
 
-  <rect x="170" y="280" width="182" height="62" rx="10" fill="#111827"/>
-  <text x="194" y="318" font-family="Consolas, monospace" font-size="24" fill="#e5e7eb">202303387</text>
-  <rect x="622" y="280" width="120" height="62" rx="10" fill="#111827"/>
-  <text x="650" y="318" font-family="Segoe UI, Arial" font-size="24" fill="#e5e7eb">92.14</text>
+    <rect x="170" y="280" width="182" height="62" rx="10" fill="#111827" />
+    <text x="194" y="318" font-family="Consolas, monospace" font-size="24" fill="#e5e7eb">202303387</text>
+    <rect x="622" y="280" width="120" height="62" rx="10" fill="#111827" />
+    <text x="650" y="318" font-family="Segoe UI, Arial" font-size="24" fill="#e5e7eb">92.14</text>
 
-  <path d="M352 185 L622 185" stroke="#16a34a" stroke-width="6" stroke-linecap="round"/>
-  <polygon points="610,175 632,185 610,195" fill="#16a34a"/>
-  <text x="414" y="170" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#166534">ID matched to CSV</text>
+    <path d="M352 185 L622 185" stroke="#16a34a" stroke-width="6" stroke-linecap="round" />
+    <polygon points="610,175 632,185 610,195" fill="#16a34a" />
+    <text x="414" y="170" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#166534">ID matched to
+        CSV</text>
 
-  <path d="M718 216 L792 270" stroke="#ef4444" stroke-width="6" stroke-linecap="round"/>
-  <polygon points="780,258 799,276 774,275" fill="#ef4444"/>
-  <text x="714" y="252" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#991b1b">Reason code updated</text>
+    <path d="M718 216 L792 270" stroke="#ef4444" stroke-width="6" stroke-linecap="round" />
+    <polygon points="780,258 799,276 774,275" fill="#ef4444" />
+    <text x="714" y="252" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#991b1b">Reason code
+        updated</text>
 
-  <rect x="80" y="482" width="800" height="54" rx="14" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
-  <text x="106" y="516" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#065f46">Result: matched student rows are filled automatically.</text>
+    <rect x="80" y="482" width="800" height="54" rx="14" fill="#d1fae5" stroke="#10b981" stroke-width="2" />
+    <text x="106" y="516" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#065f46">Result: matched
+        student rows are filled automatically.</text>
 </svg>

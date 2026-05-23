@@ -1,312 +1,381 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Score Filler Guide</title>
-  <style>
-    :root {
-      --ink: #1f2937;
-      --muted: #5b6470;
-      --blue: #1d4ed8;
-      --green: #0f766e;
-      --panel: #f8fafc;
-      --line: #d9e2ec;
-      --accent: #eef5ff;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Score Filler Guide</title>
+    <style>
+      :root {
+        --ink: #1f2937;
+        --muted: #5b6470;
+        --blue: #1d4ed8;
+        --green: #0f766e;
+        --panel: #f8fafc;
+        --line: #d9e2ec;
+        --accent: #eef5ff;
+      }
 
-    * {
-      box-sizing: border-box;
-    }
+      * {
+        box-sizing: border-box;
+      }
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--ink);
-      background: #ffffff;
-      line-height: 1.55;
-    }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--ink);
+        background: #ffffff;
+        line-height: 1.55;
+      }
 
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 32px 40px 48px;
-    }
-
-    .cover {
-      padding: 24px 0 32px;
-      border-bottom: 2px solid var(--line);
-      margin-bottom: 28px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 16px;
-    }
-
-    .brand img {
-      width: 90px;
-      height: auto;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 34px;
-      line-height: 1.15;
-      color: #0f172a;
-    }
-
-    .subtitle {
-      margin: 8px 0 0;
-      color: var(--muted);
-      font-size: 16px;
-    }
-
-    .credit {
-      margin-top: 12px;
-      font-size: 14px;
-      color: #334155;
-    }
-
-    h2 {
-      margin: 28px 0 12px;
-      font-size: 24px;
-      color: #0f172a;
-    }
-
-    h3 {
-      margin: 18px 0 8px;
-      font-size: 18px;
-      color: #0f172a;
-    }
-
-    p {
-      margin: 8px 0;
-    }
-
-    ol,
-    ul {
-      margin: 10px 0 10px 22px;
-      padding: 0;
-    }
-
-    li {
-      margin: 6px 0;
-    }
-
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 18px 20px;
-      margin: 16px 0 20px;
-    }
-
-    .figure {
-      margin: 18px 0 24px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      overflow: hidden;
-      background: #fff;
-    }
-
-    .figure img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    .caption {
-      padding: 10px 14px;
-      border-top: 1px solid var(--line);
-      background: var(--accent);
-      font-size: 13px;
-      color: #334155;
-    }
-
-    .example {
-      background: #effdf7;
-      border-left: 4px solid var(--green);
-      padding: 12px 14px;
-      border-radius: 8px;
-      margin: 12px 0 16px;
-    }
-
-    pre {
-      margin: 8px 0;
-      padding: 12px;
-      background: #0f172a;
-      color: #e2e8f0;
-      border-radius: 10px;
-      overflow-x: auto;
-      font-size: 13px;
-    }
-
-    .tip-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-top: 12px;
-    }
-
-    .tip {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 12px 14px;
-      background: #fff;
-    }
-
-    .page-break {
-      page-break-before: always;
-    }
-
-    @page {
-      size: A4;
-      margin: 16mm;
-    }
-
-    @media print {
       main {
-        max-width: none;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 40px 48px;
+      }
+
+      .cover {
+        padding: 24px 0 32px;
+        border-bottom: 2px solid var(--line);
+        margin-bottom: 28px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 16px;
+      }
+
+      .brand img {
+        width: 90px;
+        height: auto;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 34px;
+        line-height: 1.15;
+        color: #0f172a;
+      }
+
+      .subtitle {
+        margin: 8px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .credit {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #334155;
+      }
+
+      h2 {
+        margin: 28px 0 12px;
+        font-size: 24px;
+        color: #0f172a;
+      }
+
+      h3 {
+        margin: 18px 0 8px;
+        font-size: 18px;
+        color: #0f172a;
+      }
+
+      p {
+        margin: 8px 0;
+      }
+
+      ol,
+      ul {
+        margin: 10px 0 10px 22px;
         padding: 0;
       }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <section class="cover">
-      <div class="brand">
-        <img src="../logo.svg" alt="Student Score Filler logo">
-        <div>
-          <h1>Student Score Filler</h1>
-          <p class="subtitle">Guide for loading the extension into Chrome and using it to fill student scores.</p>
+
+      li {
+        margin: 6px 0;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 18px 20px;
+        margin: 16px 0 20px;
+      }
+
+      .figure {
+        margin: 18px 0 24px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        overflow: hidden;
+        background: #fff;
+      }
+
+      .figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .caption {
+        padding: 10px 14px;
+        border-top: 1px solid var(--line);
+        background: var(--accent);
+        font-size: 13px;
+        color: #334155;
+      }
+
+      .example {
+        background: #effdf7;
+        border-left: 4px solid var(--green);
+        padding: 12px 14px;
+        border-radius: 8px;
+        margin: 12px 0 16px;
+      }
+
+      pre {
+        margin: 8px 0;
+        padding: 12px;
+        background: #0f172a;
+        color: #e2e8f0;
+        border-radius: 10px;
+        overflow-x: auto;
+        font-size: 13px;
+      }
+
+      .tip-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 12px;
+      }
+
+      .tip {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 12px 14px;
+        background: #fff;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      @page {
+        size: A4;
+        margin: 16mm;
+      }
+
+      @media print {
+        main {
+          max-width: none;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="cover">
+        <div class="brand">
+          <img src="../logo.svg" alt="Student Score Filler logo" />
+          <div>
+            <h1>Student Score Filler</h1>
+            <p class="subtitle">
+              Guide for loading the extension into Chrome and using it to fill
+              student scores.
+            </p>
+          </div>
         </div>
-      </div>
-      <p class="credit">Developed by Dr. Ayman Al-Ani</p>
-    </section>
+        <p class="credit">Developed by Dr. Ayman Al-Ani</p>
+      </section>
 
-    <section>
-      <h2>1. What This Extension Does</h2>
-      <div class="panel">
-        <p>This extension helps you fill student marks on a web page automatically.</p>
-        <ul>
-          <li>It reads a CSV file that contains student IDs and scores.</li>
-          <li>It matches each student ID from the file with the student ID shown on the page.</li>
-          <li>It fills the score input box for each matched student.</li>
-          <li>It can also set the same reason code for all students.</li>
-        </ul>
-      </div>
-    </section>
+      <section>
+        <h2>1. What This Extension Does</h2>
+        <div class="panel">
+          <p>
+            This extension helps you fill student marks on a web page
+            automatically.
+          </p>
+          <ul>
+            <li>It reads a CSV file that contains student IDs and scores.</li>
+            <li>
+              It matches each student ID from the file with the student ID shown
+              on the page.
+            </li>
+            <li>It fills the score input box for each matched student.</li>
+            <li>It can also set the same reason code for all students.</li>
+          </ul>
+        </div>
+      </section>
 
-    <section>
-      <h2>2. How To Load The Extension Into Chrome</h2>
-      <h3>Step 1: Open the Extensions Page</h3>
-      <p>Open Chrome and go to <strong>chrome://extensions</strong>.</p>
+      <section>
+        <h2>2. How To Load The Extension Into Chrome</h2>
+        <h3>Step 1: Open the Extensions Page</h3>
+        <p>Open Chrome and go to <strong>chrome://extensions</strong>.</p>
 
-      <div class="figure">
-        <img src="figures/install-chrome.svg" alt="Illustration of the Chrome extensions page showing Developer mode and Load unpacked">
-        <div class="caption">Figure 1. Open the Chrome extensions page, enable Developer mode, then click Load unpacked.</div>
-      </div>
+        <div class="figure">
+          <img
+            src="figures/install-chrome.svg"
+            alt="Illustration of the Chrome extensions page showing Developer mode and Load unpacked"
+          />
+          <div class="caption">
+            Figure 1. Open the Chrome extensions page, enable Developer mode,
+            then click Load unpacked.
+          </div>
+        </div>
 
-      <h3>Step 2: Select the Extension Folder</h3>
-      <p>After clicking <strong>Load unpacked</strong>, choose the <strong>chrome-extension</strong> folder from your computer.</p>
+        <h3>Step 2: Select the Extension Folder</h3>
+        <p>
+          After clicking <strong>Load unpacked</strong>, choose the
+          <strong>chrome-extension</strong> folder from your computer.
+        </p>
 
-      <div class="figure">
-        <img src="figures/select-folder.svg" alt="Illustration of selecting the chrome-extension folder">
-        <div class="caption">Figure 2. Select the chrome-extension folder, not an individual file inside it.</div>
-      </div>
+        <div class="figure">
+          <img
+            src="figures/select-folder.svg"
+            alt="Illustration of selecting the chrome-extension folder"
+          />
+          <div class="caption">
+            Figure 2. Select the chrome-extension folder, not an individual file
+            inside it.
+          </div>
+        </div>
 
-      <div class="example">
-        <strong>Example folder to choose:</strong>
-        <pre>d:\project for 2026 BH\chrome-extension</pre>
-      </div>
+        <div class="example">
+          <strong>Example folder to choose:</strong>
+          <pre>d:\project for 2026 BH\chrome-extension</pre>
+        </div>
 
-      <h3>Step 3: Pin the Extension</h3>
-      <p>Click the puzzle icon in Chrome, then pin <strong>Student Score Filler</strong> so it is easy to open later.</p>
-    </section>
+        <h3>Step 3: Pin the Extension</h3>
+        <p>
+          Click the puzzle icon in Chrome, then pin
+          <strong>Student Score Filler</strong> so it is easy to open later.
+        </p>
+      </section>
 
-    <section class="page-break">
-      <h2>3. How To Use The Extension</h2>
-      <h3>Step 1: Open the Marks Page</h3>
-      <p>Open the web page that contains the student table and the score input boxes.</p>
+      <section class="page-break">
+        <h2>3. How To Use The Extension</h2>
+        <h3>Step 1: Open the Marks Page</h3>
+        <p>
+          Open the web page that contains the student table and the score input
+          boxes.
+        </p>
 
-      <h3>Step 2: Open the Extension Popup</h3>
-      <p>Click the Student Score Filler icon in Chrome.</p>
+        <h3>Step 2: Open the Extension Popup</h3>
+        <p>Click the Student Score Filler icon in Chrome.</p>
 
-      <div class="figure">
-        <img src="figures/popup-guide.svg" alt="Illustration of the Student Score Filler popup with file selection and options">
-        <div class="caption">Figure 3. The popup lets you choose the file, select the ID and score columns, choose the reason code, and run Fill Scores.</div>
-      </div>
+        <div class="figure">
+          <img
+            src="figures/popup-guide.svg"
+            alt="Illustration of the Student Score Filler popup with file selection and options"
+          />
+          <div class="caption">
+            Figure 3. The popup lets you choose the file, select the ID and
+            score columns, choose the reason code, and run Fill Scores.
+          </div>
+        </div>
 
-      <h3>Step 3: Select the CSV File</h3>
-      <p>Click <strong>Select CSV File</strong> and choose your file.</p>
+        <h3>Step 3: Select the CSV File</h3>
+        <p>Click <strong>Select CSV File</strong> and choose your file.</p>
 
-      <div class="example">
-        <strong>Example CSV content:</strong>
-        <pre>id,score
+        <div class="example">
+          <strong>Example CSV content:</strong>
+          <pre>
+id,score
 202303387,92.14
 202303552,85.71
-202302918,73.81</pre>
-      </div>
+202302918,73.81</pre
+          >
+        </div>
 
-      <h3>Step 4: Choose the Correct Columns</h3>
-      <p>After the file is loaded, choose:</p>
-      <ul>
-        <li>The column that contains the student ID</li>
-        <li>The column that contains the score</li>
-      </ul>
-
-      <p>If the file came from Excel and has more than two columns, this step lets you select the correct ones.</p>
-
-      <h3>Step 5: Choose the Reason Code</h3>
-      <p>Select one reason code. The extension will apply this code to all students on the page.</p>
-
-      <h3>Step 6: Click Fill Scores</h3>
-      <p>The extension will fill matched students automatically and then show a result message.</p>
-    </section>
-
-    <section>
-      <h2>4. What Happens On The Page</h2>
-      <div class="figure">
-        <img src="figures/result-flow.svg" alt="Illustration of student ID matching and filling score and reason code fields">
-        <div class="caption">Figure 4. The extension finds the student ID in the page row, writes the score into the marks field, and updates the reason dropdown.</div>
-      </div>
-
-      <div class="panel">
-        <p>When the extension runs:</p>
+        <h3>Step 4: Choose the Correct Columns</h3>
+        <p>After the file is loaded, choose:</p>
         <ul>
-          <li>It scans the table rows on the page.</li>
-          <li>It compares each row's student ID with the IDs in the CSV file.</li>
-          <li>For each match, it fills the score input box.</li>
-          <li>It also changes all reason-code dropdowns to the selected value.</li>
+          <li>The column that contains the student ID</li>
+          <li>The column that contains the score</li>
         </ul>
-      </div>
-    </section>
 
-    <section>
-      <h2>5. Troubleshooting</h2>
-      <div class="tip-grid">
-        <div class="tip">
-          <strong>The file loads, but no rows appear</strong>
-          <p>Check that the first row contains column names and that you selected the correct ID and score columns.</p>
+        <p>
+          If the file came from Excel and has more than two columns, this step
+          lets you select the correct ones.
+        </p>
+
+        <h3>Step 5: Choose the Reason Code</h3>
+        <p>
+          Select one reason code. The extension will apply this code to all
+          students on the page.
+        </p>
+
+        <h3>Step 6: Click Fill Scores</h3>
+        <p>
+          The extension will fill matched students automatically and then show a
+          result message.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. What Happens On The Page</h2>
+        <div class="figure">
+          <img
+            src="figures/result-flow.svg"
+            alt="Illustration of student ID matching and filling score and reason code fields"
+          />
+          <div class="caption">
+            Figure 4. The extension finds the student ID in the page row, writes
+            the score into the marks field, and updates the reason dropdown.
+          </div>
         </div>
-        <div class="tip">
-          <strong>Some students are not filled</strong>
-          <p>This usually means those student IDs were not found on the current page.</p>
+
+        <div class="panel">
+          <p>When the extension runs:</p>
+          <ul>
+            <li>It scans the table rows on the page.</li>
+            <li>
+              It compares each row's student ID with the IDs in the CSV file.
+            </li>
+            <li>For each match, it fills the score input box.</li>
+            <li>
+              It also changes all reason-code dropdowns to the selected value.
+            </li>
+          </ul>
         </div>
-        <div class="tip">
-          <strong>The extension does not appear in Chrome</strong>
-          <p>Go back to chrome://extensions, make sure Developer mode is enabled, and reload the extension.</p>
+      </section>
+
+      <section>
+        <h2>5. Troubleshooting</h2>
+        <div class="tip-grid">
+          <div class="tip">
+            <strong>The file loads, but no rows appear</strong>
+            <p>
+              Check that the first row contains column names and that you
+              selected the correct ID and score columns.
+            </p>
+          </div>
+          <div class="tip">
+            <strong>Some students are not filled</strong>
+            <p>
+              This usually means those student IDs were not found on the current
+              page.
+            </p>
+          </div>
+          <div class="tip">
+            <strong>The extension does not appear in Chrome</strong>
+            <p>
+              Go back to chrome://extensions, make sure Developer mode is
+              enabled, and reload the extension.
+            </p>
+          </div>
+          <div class="tip">
+            <strong>The popup options are hidden</strong>
+            <p>
+              The ID column, score column, and reason code options appear only
+              after a file is selected.
+            </p>
+          </div>
         </div>
-        <div class="tip">
-          <strong>The popup options are hidden</strong>
-          <p>The ID column, score column, and reason code options appear only after a file is selected.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
